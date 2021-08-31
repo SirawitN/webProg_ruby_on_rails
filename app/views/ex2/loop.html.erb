@@ -1,0 +1,12 @@
+<h1>Exercise2 : loop</h1>
+<br>
+<p>The parameters a = <%= @param1 %> ,and b = <%= @param2 %></p>
+<br>
+<% if flash[:alert] %>
+	<%= flash[:alert] %>
+<% else %>
+	<% for i in @xxx..@yyy %>
+		<%= i %>
+	<% end %>
+<% end %>
+

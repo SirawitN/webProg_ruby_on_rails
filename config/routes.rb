@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   get '/welcome', to: 'main#welcome'    #class#func_n
   get '/contact_us', to: 'main#contact'
-
+  get '/loop', to: 'ex2#loop'
 
 end
