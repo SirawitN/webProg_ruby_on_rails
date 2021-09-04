@@ -1,0 +1,14 @@
+<h1>User#read</h1>
+<p>Find me in app/views/user/read.html.erb</p>
+
+<strong>User_id = <%= @id %></strong>
+<br><br>
+
+<% if @user == nil %>
+	<%= "Couldn't find a user with ID = #{@id}" %>
+<% else %>
+	<% @user.displayPosts.each do |p| %>
+		<%= "Post_id = #{p.id}, created at #{p.created_at}" %> <br>
+		<%= "msg = #{p.msg}" %> <br><br>
+	<% end %>
+<% end %>

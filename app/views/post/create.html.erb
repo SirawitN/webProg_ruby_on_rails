@@ -1,0 +1,11 @@
+<h1>Post#create</h1>
+<p>Find me in app/views/post/create.html.erb</p>
+
+<% if flash[:alert] %>
+	<%= flash[:alert] %>
+	<% flash.clear %>  <!-- <-----------------  -->
+<% else %>
+	<%= "Post_id = #{@post.id}, msg = #{@post.msg}" %>
+	<br><br>
+	<%= "Post created!!" %>
+<% end %>
